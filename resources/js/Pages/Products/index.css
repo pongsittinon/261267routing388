@@ -1,0 +1,200 @@
+/* Global Styles */
+body {
+    background-color: #000; /* Black background for the entire page */
+    font-family: 'Roboto', sans-serif; /* Clean modern font */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text for readability on black background */
+}
+
+/* Main Container */
+.container {
+    background-color: #222; /* Darker container background */
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Softer shadow for elegance */
+    text-align: center;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 3rem;
+    color: #f39c12; /* Vibrant yellow-orange gradient text */
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px; /* Subtle letter-spacing */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff9a8b, #a8c0ff, #ff007f); /* Colorful gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Product List Styles */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for a balanced look */
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Product Item Styles */
+.product-item {
+    background-color: #333; /* Dark background for each item */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Softer shadows for depth */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Hover Effect on Product Item */
+.product-item:hover {
+    transform: translateY(-10px); /* Elevates item when hovered */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Product Image Container */
+.product-image-container {
+    width: 100%;
+    height: 250px; /* Taller image for better focus */
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Light background for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover mode for better image scaling */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom on hover */
+}
+
+/* Zoom Effect on Image Hover */
+.product-item:hover .product-image {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Product Name and Price */
+.product-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff7e5f; /* Bright coral color */
+    margin: 10px 0;
+}
+
+/* Rainbow Gradient on Price */
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff9a8b, #a8c0ff, #ff007f); /* Gradient price */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+/* Product Button */
+.product-button {
+    display: inline-block;
+    background-color: #ff7e5f; /* Bright coral button */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect on Product Button */
+.product-button:hover {
+    background-color: #feb47b; /* Lighter orange on hover */
+}
+
+/* Product Detail Page */
+.product-detail-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-detail {
+    display: flex;
+    gap: 30px;
+    background-color: #333; /* Dark background for product detail */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 40px;
+    width: 100%;
+}
+
+.product-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-detail-image {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Detail Information */
+.product-detail-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ff7e5f; /* Vibrant coral color */
+}
+
+.product-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ddd; /* Light gray for text */
+}
+
+/* Gradient Price */
+.product-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff9a8b, #a8c0ff, #ff007f); /* Price gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background-color: #ff7e5f; /* Bright coral button */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect on Back Button */
+.back-button:hover {
+    background-color: #feb47b; /* Lighter orange on hover */
+}
